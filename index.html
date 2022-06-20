@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/recuperer.css">
+    <link rel="stylesheet" href="css/operation.css">
+    <link rel="stylesheet" href="css/depense.css">
+    <link rel="stylesheet" href="css/revenu.css">
+    <script src="main.js" defer></script>
+    <title>Gestion Budget</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Gestion de budget</h1>
+    </header>
+    <div class="container">
+        <div class="container-budget">
+            <div id="montant-revenu" class="numberrev">
+                <small>Revenu</small>
+                <div class="montant-container">
+                    <span id="expense"></span>
+                    <p id="symbol-revenu">CFA</p>
+                    
+                </div>
+            </div>
+            <div id="montant-disponible" class="numberbls">
+                <small>Solde</small>
+                <div class="montant-container">
+                    <span id="balance"></span>
+                    <p id="symbol-solde">CFA</p>
+                    
+                </div>
+            </div>
+            <div id="montant-depense" class="numberdps">
+                <small>Depense</small>
+                <div class="montant-container">
+                    <span id="income"></span>
+                    <p id="symbol-depense">CFA</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <button type="button" class="btn-ajout-depense" id="ajout-depense">+ depense</button>
+        <table id="table-depense" class="recuperer">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="depense" id="depense">
+            <div class="depense-content">
+                <header class="depense-header">
+                    <h2>Nouveau depense</h2>
+                    <span class="fermer-depense" id="fermerDepense">&#10006;</span>
+                </header>
+                <form id="form-depense" class="depense-form">
+                    <input type="text" id="titredps" data-index="new" class="depense-field" placeholder="titre depense"
+                        required>
+                    <input type="number" id="montantdps" class="depense-field" placeholder="montant depense" required>
+                </form>
+                <footer class="depense-footer">
+                    <button id="envoyer-depense" class="btn-envoyer-depense">Envoyer</button>
+                    <button id="annuler-depense" class="btn-annuler-depense">Annuler</button>
+                </footer>
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn-ajout-revenu" id="ajout-revenu">+ revenu</button>
+        <table id="table-revenu" class="recuperer">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="revenu" id="revenu">
+            <div class="revenu-content">
+                <header class="revenu-header">
+                    <h2>Nouveau revenu</h2>
+                    <span class="fermer-revenu" id="fermerRevenu">&#10006;</span>
+                </header>
+                <form id="form-revenu" class="revenu-form">
+                    <input type="text" id="titreRev" data-index="new" class="revenu-field" placeholder="titre revenu"
+                        required>
+                    <input type="number" id="montantRev" class="revenu-field" placeholder="montant revenu" required>
+                </form>
+                <footer class="revenu-footer">
+                    <button id="envoyer-revenu" class="btn-envoyer-revenu">Envoyer</button>
+                    <button id="annuler-revenu" class="btn-annuler-revenu">Annuler</button>
+                </footer>
+            </div>
+        </div>
+        <br><br>
+    </main>
+
+    <div class="container-transaction">
+        <h3>
+            Historiques transactions: 
+        </h3>
+         
+        <div class="container-list-transaction">             
+            <ul id="transactionDepense">
+                <li>
+                    courant
+                    <div>
+                        <span class="income-sp"></span>
+                        <button>-</button>
+                    </div>
+                </li>
+            </ul>
+            <ul id="transactionRevenu">
+                <li>
+                    salaire
+                    <div>
+                        <span class="expense-sp"></span>
+                        <button>+</button>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </div> 
+    <footer>
+        <h2>@ copyright 2022 id-geniecode</h2>
+
+    </footer>
+</body>
+</html>

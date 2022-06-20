@@ -1,0 +1,137 @@
+
+:root{
+    --blue: yellow;
+    --green: yellow;
+    --red: yellow;
+}
+
+
+#income, #expense{
+    font-size: 1.3em;
+}
+#income{
+    color: white;
+}
+#expense{
+    color: white;
+}
+#balance{
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-budget{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 700px;
+    margin: 1.5rem 0 4rem;
+    
+}
+
+.numberdps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: relative;
+    left: -15%;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.numberbls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    left: -15%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.numberrev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    position: relative;
+    left: -15%;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.montant-container{
+    display: flex;
+    
+}
+small{
+    font-size: 20px;
+}
+
+#montant-revenu,#symbol-revenu{color: var(--green);}
+#montant-depense,#symbol-depense{color: var(--red);}
+#montant-disponible,#symbol-solde{color: var(--blue);}
+
+
+@media (max-width: 450px) {
+    .container{
+        width: 100%;
+    }
+    .container-budget{
+        width: 40%;
+        max-width: 500px;
+    }
+    .numberrev{
+        position: relative;
+        left: -45%;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    .numberbls{
+        position: relative;
+        left: -35%;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    .numberdps{
+        position: relative;
+        left: -25%;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    
+    .conatiner_of_list_of_transactions{
+        width: 90vw;
+    }
+
+    ul{
+        width: 90vw;
+    }
+
+    .transaction{
+        width: 90%;
+        margin: 10px auto;
+        
+    }
+
+    *{
+        font-size: 95% !important;
+    }
+}

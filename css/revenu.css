@@ -1,0 +1,107 @@
+.revenu{
+    position: absolute;
+    top:0;
+    margin-right:25%;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.revenu.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.revenu-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.revenu-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+
+
+.fermer-revenu{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.fermer-revenu:hover{
+    background-color: #FF4949;
+    color: white;
+}
+
+.revenu-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.revenu-field{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size:1rem;
+}
+
+.revenu-field:focus{
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+
+.revenu-footer{
+    background-color: inherit;
+    text-align: right;
+    position: relative;
+    top: -10%;
+    padding: 0 20px;
+}
+
+
+@media (max-width: 450px) {
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: stretch;
+    }
+
+    label{
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
+    .revenu-footer{
+        position: relative;
+        margin-top: 1%;
+        padding: 0 20px;
+    }
+
+}

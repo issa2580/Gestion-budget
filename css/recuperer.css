@@ -1,0 +1,41 @@
+.recuperer{
+    width: 60%;
+    user-select: none;
+    position: relative;
+    margin-top: 5%;
+    left: -11.5%;
+}
+
+.recuperer th{
+    height: 40px;
+    background-color: #333;
+    font-size: 1rem;  
+     
+}
+.recuperer td{
+    height: 40px;
+    
+}
+
+.recuperer th:last-child,
+.recuperer td:last-child{
+    padding: 0;
+    min-width: 100px;
+    text-align: center;
+}
+
+.recuperer tr:hover{
+    background-color: var(--secundary-color);
+}
+
+
+
+@media (max-width: 450px) {
+    .recuperer{
+        width: 60%;
+        user-select: none;
+        position: relative;
+        top: -5%;
+        left: 10%;
+    }
+}

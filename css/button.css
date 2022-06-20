@@ -1,0 +1,98 @@
+.button{
+    border-style: none;
+    height: 70px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+
+.btn-annuler-depense{
+    background-color: #ff1f1f;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-envoyer-depense{
+    background-color: #026830;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-ajout-depense{
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 0 15px;
+    top: -10%;
+    left: 15%;
+    border-radius: 15px;
+}
+.btn-annuler-revenu{
+    background-color: #ff1f1f;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-envoyer-revenu{
+    background-color: #026830;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-ajout-revenu{
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 0 20px;
+    top: -10%;
+    left: 15%;
+    border-radius: 15px;
+}
+
+.btn-modifier{
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+.btn-supprimer{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+
+
+@media (max-width: 450px) {
+    .btn-ajout-depense{
+        font-size: 15px;
+        position: relative;
+        padding: 0 15px;
+        top: -5%;
+        left: 35%;
+        border-radius: 15px;
+    }
+    .btn-ajout-revenu{
+        font-size: 15px;
+        position: relative;
+        padding: 0 15px;
+        top: -5%;
+        left: 35%;
+        border-radius: 15px;
+    }
+}
