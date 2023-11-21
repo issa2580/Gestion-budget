@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d45ddae08.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/recuperer.css">
@@ -22,9 +23,8 @@
         <h1 class="header-title">Gestion de budget</h1>
     </header>
     <div class="container">
-        <div class="container-budget">
             <div id="montant-revenu" class="numberrev">
-                <small>Revenu</small>
+                <small><img style="width: 50px; height: 50px;" src="assets//salary.png" alt=""></small>
                 <div class="montant-container">
                     <span id="expense"></span>
                     <p id="symbol-revenu">CFA</p>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div id="montant-disponible" class="numberbls">
-                <small>Solde</small>
+                <small><img style="width: 50px; height: 50px;" src="assets//money-bag.png" alt=""></small>
                 <div class="montant-container">
                     <span id="balance"></span>
                     <p id="symbol-solde">CFA</p>
@@ -40,18 +40,17 @@
                 </div>
             </div>
             <div id="montant-depense" class="numberdps">
-                <small>Depense</small>
+                <small><img style="width: 50px; height: 50px;" src="assets//salary.png" alt=""></small>
                 <div class="montant-container">
                     <span id="income"></span>
                     <p id="symbol-depense">CFA</p>
                     
                 </div>
-            </div>
         </div>
     </div>
 
     <main>
-        <button type="button" class="btn-ajout-depense" id="ajout-depense">+ depense</button>
+        <button type="button" class="btn-ajout-depense" id="ajout-depense"><i class="fa-solid fa-circle-plus"></i> depense</button>
         <table id="table-depense" class="recuperer">
             <thead>
                 <tr>
@@ -76,13 +75,13 @@
                     <input type="number" id="montantdps" class="depense-field" placeholder="montant depense" required>
                 </form>
                 <footer class="depense-footer">
-                    <button id="envoyer-depense" class="btn-envoyer-depense">Envoyer</button>
-                    <button id="annuler-depense" class="btn-annuler-depense">Annuler</button>
+                    <button id="envoyer-depense" class="btn-envoyer-depense"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button id="annuler-depense" class="btn-annuler-depense"><i class="fa-solid fa-xmark"></i></button>
                 </footer>
             </div>
         </div>
         <br>
-        <button type="button" class="btn-ajout-revenu" id="ajout-revenu">+ revenu</button>
+        <button type="button" class="btn-ajout-revenu" id="ajout-revenu"><i class="fa-solid fa-circle-plus"></i> revenu</button>
         <table id="table-revenu" class="recuperer">
             <thead>
                 <tr>
@@ -107,8 +106,8 @@
                     <input type="number" id="montantRev" class="revenu-field" placeholder="montant revenu" required>
                 </form>
                 <footer class="revenu-footer">
-                    <button id="envoyer-revenu" class="btn-envoyer-revenu">Envoyer</button>
-                    <button id="annuler-revenu" class="btn-annuler-revenu">Annuler</button>
+                    <button id="envoyer-revenu" class="btn-envoyer-revenu"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button id="annuler-revenu" class="btn-annuler-revenu"><i class="fa-solid fa-xmark"></i></button>
                 </footer>
             </div>
         </div>

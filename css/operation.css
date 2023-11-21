@@ -1,8 +1,8 @@
 
 :root{
-    --blue: yellow;
-    --green: yellow;
-    --red: yellow;
+    --blue: blue;
+    --green: green;
+    --red: red;
 }
 
 
@@ -10,13 +10,13 @@
     font-size: 1.3em;
 }
 #income{
-    color: white;
+    color: black;
 }
 #expense{
-    color: white;
+    color: black;
 }
 #balance{
-    color: white;
+    color: black;
 }
 
 *{
@@ -27,29 +27,17 @@
 .container{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
     
 }
-
-.container-budget{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    max-width: 700px;
-    margin: 1.5rem 0 4rem;
-    
-}
-
 .numberdps{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    position: relative;
-    left: -15%;
+    box-shadow: 5px 10px 8px 5px #ddd;
     padding: 10px 20px;
     border-radius: 15px;
 }
@@ -58,9 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    position: relative;
-    left: -15%;
+    box-shadow: 5px 10px 8px 5px #ddd;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 20px;
@@ -70,9 +56,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    position: relative;
-    left: -15%;
+    box-shadow: 5px 10px 8px 5px #ddd;
     padding: 10px 20px;
     border-radius: 15px;
 }
@@ -90,29 +74,23 @@ small{
 #montant-disponible,#symbol-solde{color: var(--blue);}
 
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .container{
-        width: 100%;
+        width: auto;
     }
     .container-budget{
         width: 40%;
         max-width: 500px;
     }
     .numberrev{
-        position: relative;
-        left: -45%;
         padding: 10px 15px;
         border-radius: 15px;
     }
     .numberbls{
-        position: relative;
-        left: -35%;
         padding: 10px 15px;
         border-radius: 15px;
     }
     .numberdps{
-        position: relative;
-        left: -25%;
         padding: 10px 15px;
         border-radius: 15px;
     }

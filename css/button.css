@@ -10,17 +10,19 @@
 }
 
 .btn-annuler-depense{
-    background-color: #ff1f1f;
     font-size: 20px;
-    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: red;
     cursor: pointer;
 }
 
 .btn-envoyer-depense{
-    background-color: #026830;
     font-size: 20px;
-    color: white;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: green;
 }
 
 .btn-ajout-depense{
@@ -28,25 +30,28 @@
     font-size: 15px;
     color: white;
     cursor: pointer;
-    position: relative;
     padding: 0 15px;
-    top: -10%;
-    left: 15%;
     border-radius: 15px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 .btn-annuler-revenu{
-    background-color: #ff1f1f;
     font-size: 20px;
-    color: white;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: red;
+    background-color: white;
 
 }
 
 .btn-envoyer-revenu{
-    background-color: #026830;
     font-size: 20px;
-    color: white;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: green;
+    background-color: white;
 }
 
 .btn-ajout-revenu{
@@ -54,22 +59,26 @@
     font-size: 15px;
     color: white;
     cursor: pointer;
-    position: relative;
     padding: 0 20px;
-    top: -10%;
-    left: 15%;
     border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 .btn-modifier{
     font-size: 20px;
-    color: green;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: blue;
+    background-color: white;
 }
 .btn-supprimer{
     font-size: 20px;
-    color: red;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: red;
 }
 
 .button:hover{
@@ -81,18 +90,12 @@
 @media (max-width: 450px) {
     .btn-ajout-depense{
         font-size: 15px;
-        position: relative;
         padding: 0 15px;
-        top: -5%;
-        left: 35%;
         border-radius: 15px;
     }
     .btn-ajout-revenu{
         font-size: 15px;
-        position: relative;
         padding: 0 15px;
-        top: -5%;
-        left: 35%;
         border-radius: 15px;
     }
 }

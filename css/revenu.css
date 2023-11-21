@@ -1,10 +1,4 @@
 .revenu{
-    position: absolute;
-    top:0;
-    margin-right:25%;
-    margin-top: 10%;
-    width: 50%;
-    height: 50%;
     background: #00000090;
     opacity: 0;
     z-index: -1;
@@ -20,7 +14,6 @@
     flex-direction: column;
     gap:20px;
     width: 50vw;
-    margin: 15vh auto;
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 1px 1px 10px black;
@@ -79,10 +72,11 @@
 
 .revenu-footer{
     background-color: inherit;
-    text-align: right;
-    position: relative;
-    top: -10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding: 0 20px;
+    gap: 10px;
 }
 
 

@@ -80,8 +80,8 @@ const RemplissageFormDepense = (dps, index) => {
         <td>${dps.titredps}</td>
         <td>${dps.montantdps}</td>
         <td>
-            <button type="button" class="btn-modifier" id="modifdps-${index}">Modifier</button>
-            <button type="button" class="btn-supprimer" id="supdps-${index}" >Supprimer</button>
+            <button type="button" class="btn-modifier" id="modifdps-${index}"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="btn-supprimer" id="supdps-${index}" ><i class="fa-solid fa-trash"></i></button>
         </td>
     `
     document.querySelector('#table-depense>tbody').appendChild(addline)
@@ -295,8 +295,8 @@ const RemplissageFormRevenu = (rev, index) => {
         <td>${rev.titreRev}</td>
         <td>${rev.montantRev}</td>
         <td>
-            <button type="button" class="btn-modifier" id="modifRev-${index}">Modifier</button>
-            <button type="button" class="btn-supprimer" id="supRev-${index}" >Supprimer</button>
+            <button type="button" class="btn-modifier" id="modifRev-${index}"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="btn-supprimer" id="supRev-${index}" ><i class="fa-solid fa-trash"></i></button>
         </td>
     `
     document.querySelector('#table-revenu>tbody').appendChild(addline)
