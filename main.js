@@ -4,7 +4,7 @@ function update (){
     window.location.href = "file:///C:/Users/garmi/Desktop/Gestion budget/index.html";
 }
 function netlify (){
-    window.location.href = "https://id-geniecode.netlify.app/";
+    window.location.href = "https://issa2580.github.io/Gestion-budget/";
 }
 
 
